@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust.ai</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap">
+</head>
+<body>
+    <!-- Banner -->
+    <header class="banner">
+        <img src="/static/images/logo.png" alt="Wanderlust.ai Logo" class="logo">
+        <div class="logo-text">Wanderlust.ai</div>
+        <a href="/admin-login" class="admin-login-button">Admin Login</a>
+    </header>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <video autoplay loop muted>
+            <source src="/static/videos/your-video-file.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">
+            <div class="video-text">
+                <h1>Your AI Travel Planner Plan Smarter, Travel Better</h1>
+                <p>AI Travel Planning at Your Fingertips.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Below Video -->
+    <section class="boxes-banner">
+        <div class="boxes-section">
+            <div class="box">
+                <img src="/static/images/placeholder-image.jpg" alt="Smart Trip Planning">
+                <h2>Smart Trip Planning</h2>
+                <p>Personalized itineraries, hassle-free.</p>
+            </div>
+            <div class="box">
+                <img src="/static/images/placeholder-image.jpg" alt="Tailored Recommendations">
+                <h2>Tailored Recommendations</h2>
+                <p>Curated to your unique interests.</p>
+            </div>
+            <div class="box">
+                <img src="/static/images/placeholder-image.jpg" alt="Interactive Chatbox">
+                <h2>Interactive Chatbox</h2>
+                <p>Get real-time assistance with your travel plans.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Input Section -->
+    <section class="input-section">
+        <form id="itinerary-form">
+            <label for="destination">Where do you want to go?</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="dates">From when to when?</label>
+            <input type="date" id="start-date" name="start-date" required>
+            <input type="date" id="end-date" name="end-date" required>
+
+            <label>What are you interested in?</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="interest1" name="interests" value="Adventure">
+                <label for="interest1">Adventure</label>
+                <input type="checkbox" id="interest2" name="interests" value="Relaxation">
+                <label for="interest2">Relaxation</label>
+                <input type="checkbox" id="interest3" name="interests" value="Culture">
+                <label for="interest3">Culture</label>
+                <input type="checkbox" id="interest4" name="interests" value="Nature">
+                <label for="interest4">Nature</label>
+                <input type="checkbox" id="interest5" name="interests" value="Food">
+                <label for="interest5">Food</label>
+                <input type="checkbox" id="interest6" name="interests" value="Shopping">
+                <label for="interest6">Shopping</label>
+                <input type="checkbox" id="interest7" name="interests" value="Nightlife">
+                <label for="interest7">Nightlife</label>
+                <input type="checkbox" id="interest8" name="interests" value="Sports">
+                <label for="interest8">Sports</label>
+                <input type="checkbox" id="interest9" name="interests" value="History">
+                <label for="interest9">History</label>
+                <input type="checkbox" id="interest10" name="interests" value="Wellness">
+                <label for="interest10">Wellness</label>
+            </div>
+
+            <button type="submit">Get Itinerary</button>
+        </form>
+    </section>
+
+    <!-- Two-Section Layout -->
+    <section class="two-section-layout">
+        <div class="left-side">
+            <div class="chatbox">
+                <h3>Ask Me Anything</h3>
+                <div id="chatbox-messages"></div>
+                <form id="chatbox-form">
+                    <input type="text" id="chatbox-input" placeholder="Type your message...">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="real-time-updates">
+                <h3>Real-Time Updates</h3>
+                <p id="weather">Weather info will appear here...</p>
+                <p id="air-quality">Air Quality info will appear here...</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

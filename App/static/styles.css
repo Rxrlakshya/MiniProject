@@ -1,0 +1,195 @@
+/* Banner */
+.banner {
+    display: flex;
+    align-items: center;
+    background-color: #2e2e2e; /* Darker grey color */
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-left: 10px; /* Position "Wanderlust.ai" next to the logo */
+}
+
+.admin-login-button {
+    background-color: #ff7e7e; /* Pink color */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: auto; /* Push the button to the far right */
+}
+
+/* Video Section */
+.video-section {
+    position: relative;
+    text-align: center;
+}
+
+.video-section video {
+    width: 100%;
+    height: auto;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-text {
+    color: #ffffff;
+    text-align: center;
+}
+
+.video-text h1 {
+    font-size: 4em; /* Increase font size */
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ff7e7e, #ff9900); /* Pink to Orange gradient */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.video-text p {
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+/* Boxes Banner */
+.boxes-banner {
+    background-color: #2e2e2e; /* Dark grey color */
+    padding: 20px;
+}
+
+.boxes-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    background: linear-gradient(to right, #ff7e7e, #ff9900); /* Pink to Orange gradient */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.box img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Input Section */
+.input-section {
+    padding: 20px;
+}
+
+.input-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-section input[type="text"],
+.input-section input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox-group input {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #ff7e7e; /* Pink color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Two-Section Layout */
+.two-section-layout {
+    display: flex;
+}
+
+.left-side,
+.right-side {
+    flex: 1;
+    padding: 20px;
+}
+
+.chatbox {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+#chatbox-messages {
+    margin-bottom: 10px;
+}
+
+#chatbox-form {
+    display: flex;
+}
+
+#chatbox-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#chatbox-form button {
+    background-color: #ff7e7e; /* Pink color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Real-Time Updates */
+.real-time-updates {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    height: 300px;
+}
+
+.real-time-updates h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.real-time-updates p {
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+}
+
+   
